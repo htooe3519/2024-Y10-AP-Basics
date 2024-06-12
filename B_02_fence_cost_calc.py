@@ -23,12 +23,12 @@ keep_going = ""
 while keep_going == "":
     # Get width and height
     width = num_check("Width: ")
-    length: float = num_check("Length: ")
+    height = num_check("Height: ")
     cost = num_check("Cost: ")
 
     # Calculate perimeter and price for the fence
-    area = width * height
-    price = 2 * (width + height)
+    perimeter = 2 * (width + height)
+    price = cost * perimeter
 
     # Display output
     print()
